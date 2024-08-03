@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+    --marron-escuro: #333;
+    --marron-claro: #33333338;
+    --cinza: #ccc;
+    --cinza-claro: #eee;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.container {
+    background-color: var(--cinza-claro);  
+    width: 80%;
+    margin: auto;
+    padding: 1px;
+}
+
+.titulo {
+    width: 100%;
+    display: flex;
+    margin-top: 40px;
+    padding: 10px 0;
+    box-shadow: 0px 0px 6px black;
+    text-align: center;
+}
+
+.titulo h1 {
+   
+    display: inline-block;
+    background-color: var(--marron-escuro);
+    margin: auto;
+    padding: 10px;
+    font-size: 2em;
+    color: white;
+    border-radius: 10px 10px 0 0;
+    border-bottom: 2px solid white;
+    text-shadow: 4px 4px 6px black;
+    box-shadow: 4px 4px 6px black;
+}
+
+.lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    max-width: 70%;
+    margin: 40px auto;
+}
+
+.contatos {
+    width: 250px;
+    display: flex;
+    flex-wrap: wrap; 
+    flex-direction: column; 
+    justify-content: center;
+    text-align: center;
+    margin: 10px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.61);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.contatos .img-fundo {
+    height: 130px;
+    background-image: url(../img/thumb01.jpg);
+    background-size: cover;
+}
+
+.contatos > img {
+    border-radius: 50%;
+    margin: auto;
+    width: 80px;
+    transform: translateY(-50%);
+}
+
+.nome {
+    font-size: 1.5em;
+    transform: translateY(-100%);
+}
+
+.email {
+    color: var(--marron-escuro);
+    transform: translateY(-100%);
+ }
+
+.icones {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--marron-claro);
+    padding: 20px;
+}
+
+.icones img {
+    width: 25px;
+    opacity: .4;
+    padding: 5px;
+    transition: .2s;
+    box-sizing: content-box;
+}
+
+.icones img:hover {
+    width: 25px;
+    opacity: .7;
+    cursor: pointer;
+}
+
+.rodape {
+    background-color: var(--marron-escuro);
+    color: var(--cinza);
+    text-align: center;
+    font-style: italic;
+    padding: 20px;
+}
+
+.rodape a {
+    color: var(--cinza);
+    border: 1px solid var(--cinza);
+    padding: 1px 5px;
+    border-radius: 5px;
+}
+
+.rodape a:hover {
+    color: white;
+    text-decoration: underline;
+    border: 1px solid white;
+}
